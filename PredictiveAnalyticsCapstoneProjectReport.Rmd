@@ -1,0 +1,61 @@
+---
+title: "Business Forecasting Capstone Project"
+author: "Nathaniel Porter"
+date: "`r format(Sys.Date())`"
+output:
+  html_document:
+    df_print: paged
+  word_document: default
+  pdf_document: default
+always_allow_html: yes
+---
+<style>
+body {
+text-align: justify}
+</style>
+
+```{r echo=FALSE}
+# Don't forget to "Save a Permanent Copy" of this project first!!!!!!
+
+# Please complete the following R programs and answer each of the questions based # on its relevant R output. After you complete this assignment, replace "FirstName # LastName" for author with your name and knit the file into HTML and choose "open # in Browser". After that, you need to save the HTML file into a PDF file. In # # Google Chrome, you do it by choosing "Print..."-> setting "Destination" as "Save # # as PDF"-> Click "Save".
+```
+
+```{r echo=FALSE}
+# To import your CSV data file into this cloud project: First, upload your CSV file. In Files tab in the Output pane, click Upload->Choose File->Open->Ok. Second, as you did in previous assignments, install and load the readr package into R, and use the read_csv() command to read the CSV file into R.
+install.packages("readr")
+library(readr)
+SalesData <- read_csv("SalesData.csv")
+```
+
+# 1. Introduction
+
+## a. Business Interest and Objective
+
+This superstore sells many different categories of consumer and commercial products, ranging from home goods, to office supplies, electronics, and other consumer products. Recently the company has began an initiative ti study sales in each category in order to identify which categories are the top performers
+
+## b. The Problem to Solve
+
+# 2. Data Description and Exploration 
+
+```{r message=FALSE, warning=FALSE}
+# show the total number of records in the dataset using nrow()
+nrow(SalesData)
+# show the first 6 rows of the dataset using head()
+head(SalesData)
+
+# Do some data wrangling to prepare the data for this project
+install.packages("sqldf") 
+library(sqldf)
+```
+
+# 3. Models and Analysis
+
+## a. Forecasting models
+
+## b. Model performance comparison 
+
+## c. Data forecasting
+
+# 4. Discussion and Recommendation 
+
+
